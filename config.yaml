@@ -1,0 +1,33 @@
+sample_sheet: "samplesheet.csv"
+ONT: True
+
+#Genome reference
+genomes:
+  hg38:
+    ref: "/mnt/ccrsf-ifx/RefGenomes/hg38_SEQC/hg38.fa"
+    gtf: "/mnt/ccrsf-ifx/RefGenomes/hg38/GTF/gencode.v44.annotation.gtf"
+    cagepeak: "/mnt/ccrsf-ifx/Software/tools/SQANTI3/hg38.cage_peak_phase1and2combined_coord.bed"
+    polya: "/mnt/ccrsf-ifx/Software/tools/SQANTI3/example/polyA.list"
+    ref_dir: "/mnt/ccrsf-ifx/RefGenomes/10X_REF/refdata-cellranger-4.0.0/refdata-gex-GRCh38-2020-A"
+  macaca:
+    ref: "/mnt/ccrsf-ifx/RefGenomes/MacacaMulatta_RhesusMonkey_v8/fasta/Macaca_mulatta.Mmul_8.0.1.dna.toplevel.fa"  
+    gtf: "/mnt/ccrsf-ifx/RefGenomes/MacacaMulatta_RhesusMonkey_v8/Macaca_mulatta.Mmul_8.0.1.95.chr.gtf"
+  chicken:
+    ref: "/mnt/ccrsf-ifx/RefGenomes/Chicken_Genome/GRCg6a/DNA_index/Gallus_gallus.GRCg6a.dna.toplevel.fa"  
+    gtf: "/mnt/ccrsf-ifx/RefGenomes/Chicken_Genome/GRCg6a/GTF/Gallus_gallus.GRCg6a.106.gtf"
+
+
+#Cluster assign
+large:
+  mem: 400000
+  time: "96:00:00"
+  partition: "norm"
+medium:
+  mem: 128000
+  time: "96:00:00"
+  partition: "norm"
+small:
+  mem: 32000
+  time: "96:00:00"
+  partition: "norm"
+   
